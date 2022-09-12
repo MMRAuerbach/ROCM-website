@@ -1,6 +1,13 @@
 let spelerTotal;
 let computerTotal;  
+//Probeer document.querySelector of querySelectorAll
 let bidAmmount = document.getElementsByName("bidAmmount");
+
+//Onclick veranderen door queryselector en addEventListner
+const higherBtn = document.querySelector('.higher');
+if (higherBtn) {
+    higherBtn.addEventListener('click', higher);
+}
 
 const RNG = function() {
     spelerTotal = 0;
